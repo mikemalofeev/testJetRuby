@@ -36,7 +36,7 @@ Model.prototype.findId = function (id) {
     for (var i = 0; i < this.n; i++) {
         if (this.tiles[i].id == id) return i;
     }
-    return false;
+    return -1;
 }
 
 Model.prototype.setElemClass = function (id, klass) {
